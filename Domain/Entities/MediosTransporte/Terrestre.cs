@@ -5,17 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using Domain.Enums;
 
-namespace Clase1_Programacion
+namespace Domain.Entities
 {
     public class Terrestre : MediosDeTransporte
     {
-        public string Marca { get; set; }
-        public string Modelo { get; set; }
+        protected string Marca { get; set; }
+        protected string Modelo { get; set; }
         //el enum se puede crear aqui
         /*public enum Transmision{
             Mecanica, Automatica
         }*/
-        public Transmision Transmision { get; set; }
+        protected Transmision Transmision { get; set; }
         public Terrestre(string marca, string modelo)
         {
             Marca = marca;

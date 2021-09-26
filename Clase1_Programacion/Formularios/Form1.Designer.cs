@@ -1,5 +1,5 @@
 ﻿
-namespace Clase1_Programacion
+namespace Clase1_Programacion.Formularios
 {
     partial class Form1
     {

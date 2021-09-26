@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Clase1_Programacion.Formularios;
 namespace Clase1_Programacion
 {
     static class Program
@@ -16,7 +16,7 @@ namespace Clase1_Programacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormularioEmpleado());
         }
     }
 }

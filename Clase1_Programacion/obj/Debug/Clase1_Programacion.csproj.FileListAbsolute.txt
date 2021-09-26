@@ -1,0 +1,14 @@
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Clase1_Programacion\Clase1_Programacion\bin\Debug\Clase1_Programacion.exe.config
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Clase1_Programacion\Clase1_Programacion\bin\Debug\Clase1_Programacion.exe
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Clase1_Programacion\Clase1_Programacion\bin\Debug\Clase1_Programacion.pdb
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Clase1_Programacion\Clase1_Programacion\bin\Debug\Domain.dll
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Clase1_Programacion\Clase1_Programacion\bin\Debug\Domain.pdb
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Clase1_Programacion\Clase1_Programacion\obj\Debug\Clase1_Programacion.csproj.AssemblyReference.cache
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Clase1_Programacion\Clase1_Programacion\obj\Debug\Clase1_Programacion.Properties.Resources.resources
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Clase1_Programacion\Clase1_Programacion\obj\Debug\Clase1_Programacion.csproj.GenerateResource.cache
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Clase1_Programacion\Clase1_Programacion\obj\Debug\Clase1_Programacion.csproj.CoreCompileInputs.cache
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Clase1_Programacion\Clase1_Programacion\obj\Debug\Clase1_Programacion.csproj.CopyComplete
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Clase1_Programacion\Clase1_Programacion\obj\Debug\Clase1_Programacion.exe
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Clase1_Programacion\Clase1_Programacion\obj\Debug\Clase1_Programacion.pdb
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Clase1_Programacion\Clase1_Programacion\obj\Debug\Clase1_Programacion.Formularios.Form1.resources
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Clase1_Programacion\Clase1_Programacion\obj\Debug\Clase1_Programacion.Formularios.FormularioEmpleado.resources
