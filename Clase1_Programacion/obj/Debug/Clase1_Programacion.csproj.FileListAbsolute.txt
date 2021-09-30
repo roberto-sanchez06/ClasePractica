@@ -12,3 +12,37 @@ C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Clase1_Progr
 C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Clase1_Programacion\Clase1_Programacion\obj\Debug\Clase1_Programacion.pdb
 C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Clase1_Programacion\Clase1_Programacion\obj\Debug\Clase1_Programacion.Formularios.Form1.resources
 C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Clase1_Programacion\Clase1_Programacion\obj\Debug\Clase1_Programacion.Formularios.FormularioEmpleado.resources
+E:\Documents\ProyectosM3\Programacion_Clases\Clase1_Programacion\bin\Debug\Clase1_Programacion.exe.config
+E:\Documents\ProyectosM3\Programacion_Clases\Clase1_Programacion\bin\Debug\Clase1_Programacion.exe
+E:\Documents\ProyectosM3\Programacion_Clases\Clase1_Programacion\bin\Debug\Clase1_Programacion.pdb
+E:\Documents\ProyectosM3\Programacion_Clases\Clase1_Programacion\bin\Debug\Domain.dll
+E:\Documents\ProyectosM3\Programacion_Clases\Clase1_Programacion\bin\Debug\Infraestructure.dll
+E:\Documents\ProyectosM3\Programacion_Clases\Clase1_Programacion\bin\Debug\Domain.pdb
+E:\Documents\ProyectosM3\Programacion_Clases\Clase1_Programacion\bin\Debug\Infraestructure.pdb
+E:\Documents\ProyectosM3\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.csprojAssemblyReference.cache
+E:\Documents\ProyectosM3\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.Formularios.Form1.resources
+E:\Documents\ProyectosM3\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.Formularios.FormularioEmpleado.resources
+E:\Documents\ProyectosM3\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.Formularios.FrmEmpleado.resources
+E:\Documents\ProyectosM3\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.Properties.Resources.resources
+E:\Documents\ProyectosM3\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.csproj.GenerateResource.cache
+E:\Documents\ProyectosM3\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.csproj.CoreCompileInputs.cache
+E:\Documents\ProyectosM3\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.csproj.CopyComplete
+E:\Documents\ProyectosM3\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.exe
+E:\Documents\ProyectosM3\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.pdb
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Clase1_Programacion\bin\Debug\Clase1_Programacion.exe.config
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Clase1_Programacion\bin\Debug\Clase1_Programacion.exe
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Clase1_Programacion\bin\Debug\Clase1_Programacion.pdb
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Clase1_Programacion\bin\Debug\Domain.dll
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Clase1_Programacion\bin\Debug\Infraestructure.dll
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Clase1_Programacion\bin\Debug\Domain.pdb
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Clase1_Programacion\bin\Debug\Infraestructure.pdb
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.csproj.AssemblyReference.cache
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.Formularios.Form1.resources
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.Formularios.FormularioEmpleado.resources
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.Formularios.FrmEmpleado.resources
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.Properties.Resources.resources
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.csproj.GenerateResource.cache
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.csproj.CoreCompileInputs.cache
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.csproj.CopyComplete
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.exe
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.pdb

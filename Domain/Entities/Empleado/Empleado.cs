@@ -7,7 +7,9 @@ namespace Domain.Entities.Empleado
 {
     public abstract class Empleado
     {
-        //el id puede ser string 
+        protected int Id { get; set; }
+        protected string Cedula { get; set; }
+        //el codigo puede ser string 
         protected int Codigo { get; set; }
         protected string Nombres { get; set; }
         protected string Apellidos { get; set; }
