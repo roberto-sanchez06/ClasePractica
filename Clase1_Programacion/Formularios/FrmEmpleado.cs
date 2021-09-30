@@ -56,5 +56,10 @@ namespace Clase1_Programacion.Formularios
                 richTextBox1.AppendText(e.GetEmpleadoAsString());
             }
         }
+
+        private void CmbTipoEmpleado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

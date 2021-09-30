@@ -16,7 +16,7 @@ namespace Clase1_Programacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmEmpleado());
+            Application.Run(new FrmEmployee());
         }
     }
 }

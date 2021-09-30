@@ -46,3 +46,4 @@ C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS
 C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.csproj.CopyComplete
 C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.exe
 C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.pdb
+E:\Documents\ProyectosM3\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.Formularios.FrmEmployee.resources
