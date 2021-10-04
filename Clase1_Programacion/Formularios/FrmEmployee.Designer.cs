@@ -41,13 +41,17 @@
             this.nudSalario = new System.Windows.Forms.NumericUpDown();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cmbTipoContratacion = new System.Windows.Forms.ComboBox();
-            this.lblTipocontratacion = new System.Windows.Forms.Label();
+            this.lblCategoriaDocente = new System.Windows.Forms.Label();
+            this.cmbCategoriaDocente = new System.Windows.Forms.ComboBox();
+            this.btnCrear = new System.Windows.Forms.Button();
+            this.pnlDocente = new System.Windows.Forms.Panel();
+            this.pnlAdmin = new System.Windows.Forms.Panel();
             this.nudHorasExtras = new System.Windows.Forms.NumericUpDown();
             this.lblHorasExtras = new System.Windows.Forms.Label();
-            this.btnCrear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudSalario)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.pnlDocente.SuspendLayout();
+            this.pnlAdmin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudHorasExtras)).BeginInit();
             this.SuspendLayout();
             // 
@@ -172,10 +176,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.lblTipocontratacion);
-            this.groupBox1.Controls.Add(this.lblHorasExtras);
-            this.groupBox1.Controls.Add(this.nudHorasExtras);
-            this.groupBox1.Controls.Add(this.cmbTipoContratacion);
+            this.groupBox1.Controls.Add(this.pnlAdmin);
+            this.groupBox1.Controls.Add(this.pnlDocente);
             this.groupBox1.Controls.Add(this.txtCodigo);
             this.groupBox1.Controls.Add(this.dtpFecha);
             this.groupBox1.Controls.Add(this.lblNombre);
@@ -196,48 +198,28 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de Empleados";
             // 
-            // cmbTipoContratacion
+            // lblCategoriaDocente
             // 
-            this.cmbTipoContratacion.FormattingEnabled = true;
-            this.cmbTipoContratacion.Location = new System.Drawing.Point(177, 294);
-            this.cmbTipoContratacion.Name = "cmbTipoContratacion";
-            this.cmbTipoContratacion.Size = new System.Drawing.Size(200, 25);
-            this.cmbTipoContratacion.TabIndex = 12;
-            this.cmbTipoContratacion.Visible = false;
+            this.lblCategoriaDocente.AutoSize = true;
+            this.lblCategoriaDocente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.lblCategoriaDocente.Location = new System.Drawing.Point(5, 12);
+            this.lblCategoriaDocente.Name = "lblCategoriaDocente";
+            this.lblCategoriaDocente.Size = new System.Drawing.Size(121, 16);
+            this.lblCategoriaDocente.TabIndex = 13;
+            this.lblCategoriaDocente.Text = "Categoria Docente";
             // 
-            // lblTipocontratacion
+            // cmbCategoriaDocente
             // 
-            this.lblTipocontratacion.AutoSize = true;
-            this.lblTipocontratacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.lblTipocontratacion.Location = new System.Drawing.Point(24, 298);
-            this.lblTipocontratacion.Name = "lblTipocontratacion";
-            this.lblTipocontratacion.Size = new System.Drawing.Size(131, 16);
-            this.lblTipocontratacion.TabIndex = 13;
-            this.lblTipocontratacion.Text = "Tipo de contratacion";
-            this.lblTipocontratacion.Visible = false;
-            // 
-            // nudHorasExtras
-            // 
-            this.nudHorasExtras.Location = new System.Drawing.Point(177, 341);
-            this.nudHorasExtras.Name = "nudHorasExtras";
-            this.nudHorasExtras.Size = new System.Drawing.Size(120, 23);
-            this.nudHorasExtras.TabIndex = 14;
-            this.nudHorasExtras.Visible = false;
-            // 
-            // lblHorasExtras
-            // 
-            this.lblHorasExtras.AutoSize = true;
-            this.lblHorasExtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.lblHorasExtras.Location = new System.Drawing.Point(23, 344);
-            this.lblHorasExtras.Name = "lblHorasExtras";
-            this.lblHorasExtras.Size = new System.Drawing.Size(85, 16);
-            this.lblHorasExtras.TabIndex = 15;
-            this.lblHorasExtras.Text = "Horas Extras";
-            this.lblHorasExtras.Visible = false;
+            this.cmbCategoriaDocente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategoriaDocente.FormattingEnabled = true;
+            this.cmbCategoriaDocente.Location = new System.Drawing.Point(158, 8);
+            this.cmbCategoriaDocente.Name = "cmbCategoriaDocente";
+            this.cmbCategoriaDocente.Size = new System.Drawing.Size(200, 25);
+            this.cmbCategoriaDocente.TabIndex = 12;
             // 
             // btnCrear
             // 
-            this.btnCrear.Location = new System.Drawing.Point(351, 424);
+            this.btnCrear.Location = new System.Drawing.Point(351, 407);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(75, 23);
             this.btnCrear.TabIndex = 16;
@@ -245,18 +227,61 @@
             this.btnCrear.UseVisualStyleBackColor = true;
             this.btnCrear.Click += new System.EventHandler(this.BtnCrear_Click);
             // 
+            // pnlDocente
+            // 
+            this.pnlDocente.Controls.Add(this.lblCategoriaDocente);
+            this.pnlDocente.Controls.Add(this.cmbCategoriaDocente);
+            this.pnlDocente.Location = new System.Drawing.Point(19, 297);
+            this.pnlDocente.Name = "pnlDocente";
+            this.pnlDocente.Size = new System.Drawing.Size(358, 38);
+            this.pnlDocente.TabIndex = 17;
+            this.pnlDocente.Visible = false;
+            // 
+            // pnlAdmin
+            // 
+            this.pnlAdmin.Controls.Add(this.lblHorasExtras);
+            this.pnlAdmin.Controls.Add(this.nudHorasExtras);
+            this.pnlAdmin.Location = new System.Drawing.Point(6, 297);
+            this.pnlAdmin.Name = "pnlAdmin";
+            this.pnlAdmin.Size = new System.Drawing.Size(377, 42);
+            this.pnlAdmin.TabIndex = 17;
+            this.pnlAdmin.Visible = false;
+            // 
+            // nudHorasExtras
+            // 
+            this.nudHorasExtras.DecimalPlaces = 2;
+            this.nudHorasExtras.Location = new System.Drawing.Point(177, 3);
+            this.nudHorasExtras.Name = "nudHorasExtras";
+            this.nudHorasExtras.Size = new System.Drawing.Size(120, 23);
+            this.nudHorasExtras.TabIndex = 0;
+            // 
+            // lblHorasExtras
+            // 
+            this.lblHorasExtras.AutoSize = true;
+            this.lblHorasExtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.lblHorasExtras.Location = new System.Drawing.Point(16, 3);
+            this.lblHorasExtras.Name = "lblHorasExtras";
+            this.lblHorasExtras.Size = new System.Drawing.Size(85, 16);
+            this.lblHorasExtras.TabIndex = 1;
+            this.lblHorasExtras.Text = "Horas Extras";
+            // 
             // FrmEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(439, 453);
+            this.ClientSize = new System.Drawing.Size(435, 437);
             this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmEmployee";
             this.Text = "FrmEmployee";
+            this.Load += new System.EventHandler(this.FrmEmployee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudSalario)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.pnlDocente.ResumeLayout(false);
+            this.pnlDocente.PerformLayout();
+            this.pnlAdmin.ResumeLayout(false);
+            this.pnlAdmin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudHorasExtras)).EndInit();
             this.ResumeLayout(false);
 
@@ -277,10 +302,12 @@
         private System.Windows.Forms.NumericUpDown nudSalario;
         private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox cmbTipoContratacion;
-        private System.Windows.Forms.Label lblTipocontratacion;
+        private System.Windows.Forms.ComboBox cmbCategoriaDocente;
+        private System.Windows.Forms.Label lblCategoriaDocente;
+        private System.Windows.Forms.Button btnCrear;
+        private System.Windows.Forms.Panel pnlDocente;
+        private System.Windows.Forms.Panel pnlAdmin;
         private System.Windows.Forms.Label lblHorasExtras;
         private System.Windows.Forms.NumericUpDown nudHorasExtras;
-        private System.Windows.Forms.Button btnCrear;
     }
 }

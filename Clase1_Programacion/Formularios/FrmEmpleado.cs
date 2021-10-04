@@ -48,7 +48,7 @@ namespace Clase1_Programacion.Formularios
             Empleado2[] empleados = empleadoModel.GetEmpleado2s();
             if (empleadoModel == null)
             {
-                richTextBox1.Text = "No hay elementos a enocntrar";
+                richTextBox1.Text = "No hay elementos a encontrar";
             }
             richTextBox1.Text = "";
             foreach (Empleado2 e in empleados)
@@ -57,9 +57,24 @@ namespace Clase1_Programacion.Formularios
             }
         }
 
-        private void CmbTipoEmpleado_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnNuevo_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (cmbTipoEmpleado.SelectedIndex == -1)
+                {
+                    MessageBox.Show("No ha seleccionado ningun tipo de empleado", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                FrmEmployee datos = new FrmEmployee(cmbTipoEmpleado.SelectedIndex);
+                datos.EmpleadoM = empleadoModel;
+                datos.ShowDialog();
+                PrintEmpleado();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message,"ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
         }
     }
 }

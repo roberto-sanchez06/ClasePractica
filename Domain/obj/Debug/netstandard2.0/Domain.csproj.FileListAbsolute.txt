@@ -25,3 +25,12 @@ C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS
 C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Domain\obj\Debug\netstandard2.0\Domain.csproj.CoreCompileInputs.cache
 C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Domain\obj\Debug\netstandard2.0\Domain.dll
 C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\Programacion_Clases\Domain\obj\Debug\netstandard2.0\Domain.pdb
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\ProrgramacionClases2\Programacion_Clases\Domain\bin\Debug\netstandard2.0\Domain.deps.json
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\ProrgramacionClases2\Programacion_Clases\Domain\bin\Debug\netstandard2.0\Domain.dll
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\ProrgramacionClases2\Programacion_Clases\Domain\bin\Debug\netstandard2.0\Domain.pdb
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\ProrgramacionClases2\Programacion_Clases\Domain\obj\Debug\netstandard2.0\Domain.csproj.AssemblyReference.cache
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\ProrgramacionClases2\Programacion_Clases\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\ProrgramacionClases2\Programacion_Clases\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfo.cs
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\ProrgramacionClases2\Programacion_Clases\Domain\obj\Debug\netstandard2.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\ProrgramacionClases2\Programacion_Clases\Domain\obj\Debug\netstandard2.0\Domain.dll
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\REPOSITORIOS CLONADOS DE CLASES\ProrgramacionClases2\Programacion_Clases\Domain\obj\Debug\netstandard2.0\Domain.pdb

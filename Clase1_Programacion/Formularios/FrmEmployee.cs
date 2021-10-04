@@ -1,4 +1,5 @@
 ﻿using Domain.Entities.Empleado2;
+using Domain.Enums;
 using Infraestructure;
 using System;
 using System.Collections.Generic;
@@ -15,11 +16,12 @@ namespace Clase1_Programacion.Formularios
 {
     public partial class FrmEmployee : Form
     {
-        public EmpleadoModel empleadoM {get; set;}
+        public EmpleadoModel EmpleadoM {get; set;}
         //public int  TipoEmpleado { get; set; }
         private int Tipo;
         public FrmEmployee(int tipo)
         {
+            Tipo = tipo;
             InitializeComponent();
         }
 
@@ -28,27 +30,29 @@ namespace Clase1_Programacion.Formularios
             try
             {
                 Validar(txtCedula.Text, txtCodigo.Text, txtNombre.Text, txtApellido.Text);
-                Empleado2 emp;
-                int cod = int.Parse(txtCodigo.Text);
-                //switch (TipoEmpleado)
-                //{
-                //    case 0:
-                //        emp = new Docente(cod, txtCedula.Text, txtNombre.Text, txtApellido.Text, nudSalario.Value, dtpFecha.Value)
-                //        {
-                //            Tipoc
-                //        };
-                //        break;
-                //    case 1:
-                //        emp = new Administrativo(cod, txtCedula.Text, txtNombre.Text, txtApellido.Text, nudSalario.Value, dtpFecha.Value)
-                //        {
-
-                //        };
-                //        break;
-                //}
+                //Empleado2 emp;
+                switch (Tipo)
+                {
+                    case 0:
+                        Empleado2 emp= new Docente(int.Parse(txtCodigo.Text), txtCedula.Text, txtNombre.Text, txtApellido.Text, nudSalario.Value, dtpFecha.Value)
+                        {
+                            CategoriaDocente = (CategoriaDocente)cmbCategoriaDocente.SelectedIndex
+                        };
+                        EmpleadoM.Add(emp);
+                        break;
+                    case 1:
+                        emp = new Administrativo(int.Parse(txtCodigo.Text), txtCedula.Text, txtNombre.Text, txtApellido.Text, nudSalario.Value, dtpFecha.Value)
+                        {
+                            HorasExtras = (float)nudHorasExtras.Value
+                        };
+                        EmpleadoM.Add(emp);
+                        break;
+                }
+                Dispose();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
         }
@@ -63,17 +67,32 @@ namespace Clase1_Programacion.Formularios
             {
                 throw new ArgumentException("El patron de la cedula no es el correcto");
             }
-            if (codigo.Length > 10)
-            {
-                throw new ArgumentException("El codigo no puede tener mas de 10 digitos");
-            }
+            //if (codigo.Length > 10)
+            //{
+            //    throw new ArgumentException("El codigo no puede tener mas de 10 digitos");
+            //}
         }
 
         private void TxtCodigo_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
-                throw new ArgumentException("El codigo solo puede contener numeros");
+                MessageBox.Show("Solo se admiten numeros","ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                e.Handled = true;
+            }
+        }
+
+        private void FrmEmployee_Load(object sender, EventArgs e)
+        {
+            cmbCategoriaDocente.Items.AddRange(Enum.GetValues(typeof(CategoriaDocente)).Cast<object>().ToArray());
+            switch (Tipo)
+            {
+                case 0:
+                    pnlDocente.Visible = true;
+                    break;
+                case 1:
+                    pnlAdmin.Visible = true;
+                    break;
             }
         }
     }

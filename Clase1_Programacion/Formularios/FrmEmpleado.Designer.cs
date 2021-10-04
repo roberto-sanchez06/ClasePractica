@@ -72,6 +72,7 @@
             this.btnNuevo.TabIndex = 3;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // cmbTipoEmpleado
             // 
@@ -84,7 +85,6 @@
             this.cmbTipoEmpleado.Name = "cmbTipoEmpleado";
             this.cmbTipoEmpleado.Size = new System.Drawing.Size(355, 21);
             this.cmbTipoEmpleado.TabIndex = 4;
-            this.cmbTipoEmpleado.SelectedIndexChanged += new System.EventHandler(this.CmbTipoEmpleado_SelectedIndexChanged);
             // 
             // FrmEmpleado
             // 
