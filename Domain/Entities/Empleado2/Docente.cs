@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Domain.Entities.Empleado2
 {
-    public class Docente : Empleado2
+    public class Docente : Empleado
     {
         public CategoriaDocente CategoriaDocente;
         public Docente(int codigo, string cedula, string nombres, string apellidos, decimal salario, DateTime fechaContratacion) : 

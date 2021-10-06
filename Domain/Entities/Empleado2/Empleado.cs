@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain.Entities.Empleado2
 {
-    public abstract class Empleado2
+    public abstract class Empleado
     {
         public int Id { get; set; }
         public int Codigo { get; set; }
@@ -13,7 +13,7 @@ namespace Domain.Entities.Empleado2
         public string Apellidos { get; set; }
         public decimal Salario { get; set; }
         public DateTime FechaContratacion { get; set; }
-        public Empleado2(int codigo, string cedula ,string nombres, string apellidos, decimal salario, DateTime fechaContratacion)
+        protected Empleado(int codigo, string cedula ,string nombres, string apellidos, decimal salario, DateTime fechaContratacion)
         {
             Cedula = cedula;
             Codigo = codigo;

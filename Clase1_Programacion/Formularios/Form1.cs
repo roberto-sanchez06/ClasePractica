@@ -57,7 +57,7 @@ namespace Clase1_Programacion.Formularios
                 PrintSalarioNeto(f, 1, "Juan", "perez", "001-000000-0000V", 5000, new AtributosEmpleados { Entrada= new DateTime(2021,09,22,08,00,00), Salida= new DateTime(2021, 09, 22, 18,00,00)});
             }
         }
-        private void Print(Empleado e)
+        private void Print(Employee e)
         {
             MessageBox.Show(e.PrintEmpleado());
         }

@@ -24,34 +24,34 @@ namespace Clase1_Programacion.Formularios
 
         private void BtnDocente_Click(object sender, EventArgs e)
         {
-            Empleado2 emp = new Docente(1000, "001-123456-1234V", "Pepito", "Perez", 23434, DateTime.Now)
+            Empleado emp = new Docente(1000, "001-123456-1234V", "Pepito", "Perez", 23434, DateTime.Now)
             {
                 Id = empleadoModel.GetLastEmpleadoId() + 1,
                 CategoriaDocente=CategoriaDocente.Titular
             };
-            empleadoModel.Add(emp);
+            empleadoModel.Create(emp);
             PrintEmpleado();
         }
 
         private void BtnAdmin_Click(object sender, EventArgs e)
         {
-            Empleado2 emp = new Administrativo(1000, "001-123456-1234V", "Pepito", "Perez", 7823, DateTime.Now)
+            Empleado emp = new Administrativo(1000, "001-123456-1234V", "Pepito", "Perez", 7823, DateTime.Now)
             {
                 Id = empleadoModel.GetLastEmpleadoId() + 1,
                 HorasExtras=2.5F
             };
-            empleadoModel.Add(emp);
+            empleadoModel.Create(emp);
             PrintEmpleado();
         }
         private void PrintEmpleado()
         {
-            Empleado2[] empleados = empleadoModel.GetEmpleado2s();
+            Empleado[] empleados = empleadoModel.FindAll();
             if (empleadoModel == null)
             {
                 richTextBox1.Text = "No hay elementos a encontrar";
             }
             richTextBox1.Text = "";
-            foreach (Empleado2 e in empleados)
+            foreach (Empleado e in empleados)
             {
                 richTextBox1.AppendText(e.GetEmpleadoAsString());
             }

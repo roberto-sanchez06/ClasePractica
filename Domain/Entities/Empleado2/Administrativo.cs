@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain.Entities.Empleado2
 {
-    public class Administrativo : Empleado2
+    public class Administrativo : Empleado
     {   
         public float HorasExtras { get; set; }
         public Administrativo(int codigo, string cedula, string nombres, string apellidos, decimal salario, DateTime fechaContratacion) :

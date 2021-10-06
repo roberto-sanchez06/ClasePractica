@@ -34,18 +34,18 @@ namespace Clase1_Programacion.Formularios
                 switch (Tipo)
                 {
                     case 0:
-                        Empleado2 emp= new Docente(int.Parse(txtCodigo.Text), txtCedula.Text, txtNombre.Text, txtApellido.Text, nudSalario.Value, dtpFecha.Value)
+                        Empleado emp= new Docente(int.Parse(txtCodigo.Text), txtCedula.Text, txtNombre.Text, txtApellido.Text, nudSalario.Value, dtpFecha.Value)
                         {
                             CategoriaDocente = (CategoriaDocente)cmbCategoriaDocente.SelectedIndex
                         };
-                        EmpleadoM.Add(emp);
+                        EmpleadoM.Create(emp);
                         break;
                     case 1:
                         emp = new Administrativo(int.Parse(txtCodigo.Text), txtCedula.Text, txtNombre.Text, txtApellido.Text, nudSalario.Value, dtpFecha.Value)
                         {
                             HorasExtras = (float)nudHorasExtras.Value
                         };
-                        EmpleadoM.Add(emp);
+                        EmpleadoM.Create(emp);
                         break;
                 }
                 Dispose();
