@@ -11,7 +11,7 @@ using Domain.Entities;
 using Domain.Entities.Empleado;
 using Domain.Enums;
 
-namespace Clase1_Programacion.Formularios
+namespace Clase1_Programacion.Formularios.EmpleadoPrueba
 {
     public partial class Form1 : Form
     {

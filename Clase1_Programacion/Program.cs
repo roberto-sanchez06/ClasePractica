@@ -7,8 +7,10 @@ using AppCore.Interfaces;
 using AppCore.Services;
 using Autofac;
 using Clase1_Programacion.Formularios;
+using Clase1_Programacion.Formularios.Product;
 using Domain.Interfaces;
 using Infraestructure;
+using Infraestructure.ProductoModel;
 
 namespace Clase1_Programacion
 {
@@ -25,11 +27,16 @@ namespace Clase1_Programacion
             builder.RegisterType<EmpleadoModel>().As<IEmpleadoModel>();
             builder.RegisterType<EmpleadoService>().As<IEmpleadoService>();
 
+            //aqui empiezan los cambios
+            builder.RegisterType<ProductoModel>().As<IProductoModel>();
+            builder.RegisterType<ProductoService>().As<IProductoService>();
+            //terminan cambios 
+           
             var container = builder.Build();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmEmpleado(container.Resolve<IEmpleadoService>()));
+            Application.Run(new FrmProductosManager(container.Resolve<IProductoService>()));
         }
     }
 }

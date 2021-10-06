@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Text;
 using Domain.Entities.Producto;
 using Domain.Enums.Producto;
+using Domain.Interfaces;
+using Newtonsoft.Json;
 
 namespace Infraestructure.ProductoModel
 {
-    public class ProductoModel
+    public class ProductoModel : IProductoModel
     {
         private Producto[] productos;
 
@@ -134,10 +136,10 @@ namespace Infraestructure.ProductoModel
             return tmp;
         }
 
-        //public string GetProductosAsJson()
-        //{
-        //    //return JsonConvert.SerializeObject(productos);
-        //}
+        public string GetProductosAsJson()
+        {
+            return JsonConvert.SerializeObject(productos);
+        }
 
         public Producto[] GetProductosOrderByPrecio()
         {
@@ -147,7 +149,14 @@ namespace Infraestructure.ProductoModel
 
         public int GetLastProductoId()
         {
-            return productos == null ? 0 : productos[productos.Length - 1].Id;
+            try
+            {
+                return productos == null ? 0 : productos[productos.Length - 1].Id;
+            }
+            catch (IndexOutOfRangeException)
+            {
+                return 0;
+            }
         }
         #endregion
 

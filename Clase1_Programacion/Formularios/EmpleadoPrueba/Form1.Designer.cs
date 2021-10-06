@@ -1,5 +1,5 @@
 ﻿
-namespace Clase1_Programacion.Formularios
+namespace Clase1_Programacion.Formularios.EmpleadoPrueba
 {
     partial class Form1
     {

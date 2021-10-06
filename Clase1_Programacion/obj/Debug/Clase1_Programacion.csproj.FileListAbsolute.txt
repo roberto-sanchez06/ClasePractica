@@ -82,7 +82,6 @@ C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Programacion
 C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Programacion_Clases\Clase1_Programacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Programacion_Clases\Clase1_Programacion\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.csproj.AssemblyReference.cache
-C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.Formularios.Form1.resources
 C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.Formularios.FormularioEmpleado.resources
 C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.Formularios.FrmEmpleado.resources
 C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.Formularios.FrmEmployee.resources
@@ -92,3 +91,8 @@ C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Programacion
 C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.csproj.CopyComplete
 C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.exe
 C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.pdb
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Programacion_Clases\Clase1_Programacion\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Programacion_Clases\Clase1_Programacion\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.Formularios.EmpleadoPrueba.Form1.resources
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.Formularios.Product.FrmProducto.resources
+C:\Users\Roberto\Desktop\UNI ONLINE\CLASES DE PROGRAMACION EN LINEA\Programacion_Clases\Clase1_Programacion\obj\Debug\Clase1_Programacion.Formularios.Product.FrmProductosManager.resources
