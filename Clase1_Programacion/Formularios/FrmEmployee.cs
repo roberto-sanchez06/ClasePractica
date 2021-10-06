@@ -1,4 +1,5 @@
-﻿using Domain.Entities.Empleado2;
+﻿//using CoreApp.Interfaces;
+using Domain.Entities.Empleado2;
 using Domain.Enums;
 using Infraestructure;
 using System;
@@ -11,12 +12,14 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AppCore.Interfaces;
 
 namespace Clase1_Programacion.Formularios
 {
     public partial class FrmEmployee : Form
     {
-        public EmpleadoModel EmpleadoM {get; set;}
+        public IEmpleadoService empleadoS;
+        //public EmpleadoModel EmpleadoM {get; set;}
         //public int  TipoEmpleado { get; set; }
         private int Tipo;
         public FrmEmployee(int tipo)
@@ -38,14 +41,14 @@ namespace Clase1_Programacion.Formularios
                         {
                             CategoriaDocente = (CategoriaDocente)cmbCategoriaDocente.SelectedIndex
                         };
-                        EmpleadoM.Create(emp);
+                        empleadoS.Create(emp);
                         break;
                     case 1:
                         emp = new Administrativo(int.Parse(txtCodigo.Text), txtCedula.Text, txtNombre.Text, txtApellido.Text, nudSalario.Value, dtpFecha.Value)
                         {
                             HorasExtras = (float)nudHorasExtras.Value
                         };
-                        EmpleadoM.Create(emp);
+                        empleadoS.Create(emp);
                         break;
                 }
                 Dispose();

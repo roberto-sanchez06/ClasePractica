@@ -1,4 +1,7 @@
-﻿using Domain.Entities.Empleado2;
+﻿//using CoreApp.Interfaces;
+//using CoreApp.Interfaces;
+using AppCore.Interfaces;
+using Domain.Entities.Empleado2;
 using Domain.Enums;
 using Infraestructure;
 using System;
@@ -15,10 +18,12 @@ namespace Clase1_Programacion.Formularios
 {
     public partial class FrmEmpleado : Form
     {
-        private EmpleadoModel empleadoModel;
-        public FrmEmpleado()
+        //Le puse incrustrar tipos inter...en la referenci a coreapp para evitar el error
+        //Lo de arriba no hace referencia a esto
+        private IEmpleadoService empleadoService;
+        public FrmEmpleado(IEmpleadoService empleadoService)
         {
-            empleadoModel = new EmpleadoModel();
+            this.empleadoService = empleadoService;
             InitializeComponent();
         }
 
@@ -26,10 +31,10 @@ namespace Clase1_Programacion.Formularios
         {
             Empleado emp = new Docente(1000, "001-123456-1234V", "Pepito", "Perez", 23434, DateTime.Now)
             {
-                Id = empleadoModel.GetLastEmpleadoId() + 1,
+                Id = empleadoService.GetLastEmpleadoId() + 1,
                 CategoriaDocente=CategoriaDocente.Titular
             };
-            empleadoModel.Create(emp);
+            empleadoService.Create(emp);
             PrintEmpleado();
         }
 
@@ -37,16 +42,16 @@ namespace Clase1_Programacion.Formularios
         {
             Empleado emp = new Administrativo(1000, "001-123456-1234V", "Pepito", "Perez", 7823, DateTime.Now)
             {
-                Id = empleadoModel.GetLastEmpleadoId() + 1,
+                Id = empleadoService.GetLastEmpleadoId() + 1,
                 HorasExtras=2.5F
             };
-            empleadoModel.Create(emp);
+            empleadoService.Create(emp);
             PrintEmpleado();
         }
         private void PrintEmpleado()
         {
-            Empleado[] empleados = empleadoModel.FindAll();
-            if (empleadoModel == null)
+            Empleado[] empleados = empleadoService.FindAll();
+            if (empleadoService == null)
             {
                 richTextBox1.Text = "No hay elementos a encontrar";
             }
@@ -67,7 +72,7 @@ namespace Clase1_Programacion.Formularios
                     return;
                 }
                 FrmEmployee datos = new FrmEmployee(cmbTipoEmpleado.SelectedIndex);
-                datos.EmpleadoM = empleadoModel;
+                datos.empleadoS = empleadoService;
                 datos.ShowDialog();
                 PrintEmpleado();
             }

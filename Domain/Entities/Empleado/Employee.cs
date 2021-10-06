@@ -5,7 +5,7 @@ using Domain.Enums;
 
 namespace Domain.Entities.Empleado
 {
-    public abstract class Empleado
+    public abstract class Employee
     {
         protected int Id { get; set; }
         protected string Cedula { get; set; }
@@ -16,7 +16,7 @@ namespace Domain.Entities.Empleado
         protected Cargo Cargo { get; set; }
         protected string NumeroIdentificacion { get; set; }
         protected decimal Salario { get; set; }
-        protected Empleado(int codigo, string nombres, string apellidos, string numeroIdentificacion, decimal salario)
+        protected Employee(int codigo, string nombres, string apellidos, string numeroIdentificacion, decimal salario)
         {
             Codigo = codigo;
             Nombres = nombres;

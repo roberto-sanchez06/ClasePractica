@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Roberto\\Desktop\\UNI ONLINE\\CLASES DE PROGRAMACION EN LINEA\\REPOSITORIOS CLONADOS DE CLASES\\ProrgramacionClases2\\Programacion_Clases\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Roberto\\Desktop\\UNI ONLINE\\CLASES DE PROGRAMACION EN LINEA\\Programacion_Clases\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\Roberto\\Desktop\\UNI ONLINE\\CLASES DE PROGRAMACION EN LINEA\\REPOSITORIOS CLONADOS DE CLASES\\ProrgramacionClases2\\Programacion_Clases\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Users\\Roberto\\Desktop\\UNI ONLINE\\CLASES DE PROGRAMACION EN LINEA\\Programacion_Clases\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\Roberto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Roberto\\Desktop\\UNI ONLINE\\CLASES DE PROGRAMACION EN LINEA\\REPOSITORIOS CLONADOS DE CLASES\\ProrgramacionClases2\\Programacion_Clases\\Domain\\obj\\",
+      "outputPath": "C:\\Users\\Roberto\\Desktop\\UNI ONLINE\\CLASES DE PROGRAMACION EN LINEA\\Programacion_Clases\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Roberto\\AppData\\Roaming\\NuGet\\NuGet.Config",

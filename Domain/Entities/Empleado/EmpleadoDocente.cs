@@ -5,7 +5,7 @@ using Domain.Enums;
 
 namespace Domain.Entities.Empleado
 {
-    public class EmpleadoDocente : Empleado
+    public class EmpleadoDocente : Employee
     {
         public TipoContratacion TipoContratacion { get; set; }
         public EmpleadoDocente(int codigo, string nombres, string apellidos, string nid, decimal salario) 

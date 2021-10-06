@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain.Entities.Empleado
 {
-    public class EmpleadoAdministrativo : Empleado
+    public class EmpleadoAdministrativo : Employee
     {
         public DateTime HoraEntrada { get; set; }
         public DateTime HoraSalida { get; set; }
