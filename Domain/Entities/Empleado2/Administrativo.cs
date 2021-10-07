@@ -13,7 +13,9 @@ namespace Domain.Entities.Empleado2
         }
         public override string GetEmpleadoAsString()
         {
-            return string.Format("{0,5:d} {1,20} {2,20}, {3,20} {4,7: F} {2,20:d} {6,20:F}", $"{Codigo}", $"{Cedula}", $"{Nombres}", $"{Apellidos}", $"{Salario}", $"{FechaContratacion}", $"{ HorasExtras}\n");
+            return string.Format("{0,5:d} {1,20} {2,20} {3,20} {4,7:f} {5,20:d} {6,20:f} \n",
+                            $"{Codigo}", $"{Cedula}", $"{Nombres}", $"{Apellidos}",
+                            $"{Salario}", $"{FechaContratacion}", $"{HorasExtras}");
         }
     }
 }

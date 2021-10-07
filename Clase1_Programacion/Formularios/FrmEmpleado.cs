@@ -1,6 +1,8 @@
 ﻿//using CoreApp.Interfaces;
 //using CoreApp.Interfaces;
+using AppCore.Factories;
 using AppCore.Interfaces;
+using AppCore.Processes;
 using Domain.Entities.Empleado2;
 using Domain.Enums;
 using Infraestructure;
@@ -18,9 +20,8 @@ namespace Clase1_Programacion.Formularios
 {
     public partial class FrmEmpleado : Form
     {
-        //Le puse incrustrar tipos inter...en la referenci a coreapp para evitar el error
-        //Lo de arriba no hace referencia a esto
         private IEmpleadoService empleadoService;
+        //private SalaryCalculator salaryCalculator;
         public FrmEmpleado(IEmpleadoService empleadoService)
         {
             this.empleadoService = empleadoService;
@@ -29,10 +30,11 @@ namespace Clase1_Programacion.Formularios
 
         private void BtnDocente_Click(object sender, EventArgs e)
         {
-            Empleado emp = new Docente(1000, "001-123456-1234V", "Pepito", "Perez", 23434, DateTime.Now)
+            Empleado emp = new Docente(1000, "001-000000-0000U", "Pepito Jose",
+                "Perez Soza", 23786.98M, DateTime.Now)
             {
-                Id = empleadoService.GetLastEmpleadoId() + 1,
-                CategoriaDocente=CategoriaDocente.Titular
+                CategoriaDocente = Domain.Enums.CategoriaDocente.Titular,
+                Id = empleadoService.GetLastEmpleadoId() + 1
             };
             empleadoService.Create(emp);
             PrintEmpleado();
@@ -40,10 +42,11 @@ namespace Clase1_Programacion.Formularios
 
         private void BtnAdmin_Click(object sender, EventArgs e)
         {
-            Empleado emp = new Administrativo(1000, "001-123456-1234V", "Pepito", "Perez", 7823, DateTime.Now)
+            Empleado emp = new Administrativo(3000, "001-000000-0000P", "Ana Cecilia",
+               "Conda Jimenez", 337860.00M, DateTime.Now)
             {
-                Id = empleadoService.GetLastEmpleadoId() + 1,
-                HorasExtras=2.5F
+                HorasExtras = 23.5f,
+                Id = empleadoService.GetLastEmpleadoId() + 1
             };
             empleadoService.Create(emp);
             PrintEmpleado();
@@ -54,11 +57,15 @@ namespace Clase1_Programacion.Formularios
             if (empleadoService == null)
             {
                 richTextBox1.Text = "No hay elementos a encontrar";
+                return;
             }
             richTextBox1.Text = "";
+            SalaryCalculatorFactory salaryCalculatorFactory = new SalaryCalculatorFactory();
             foreach (Empleado e in empleados)
             {
                 richTextBox1.AppendText(e.GetEmpleadoAsString());
+                //richTextBox1.AppendText($"Salario neto: {salaryCalculator.CalculateSalary(e)}\n");
+                richTextBox1.AppendText($"Salario neto: {salaryCalculatorFactory.CreateInstance(e).CalculateSalary(e)}\n");
             }
         }
 
