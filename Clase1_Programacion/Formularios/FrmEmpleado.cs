@@ -1,8 +1,4 @@
 ﻿//using CoreApp.Interfaces;
-//using CoreApp.Interfaces;
-using AppCore.Factories;
-using AppCore.Interfaces;
-using AppCore.Processes;
 using Domain.Entities.Empleado2;
 using Domain.Enums;
 using Infraestructure;
@@ -13,79 +9,93 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AppCore.Interfaces;
 
 namespace Clase1_Programacion.Formularios
 {
     public partial class FrmEmpleado : Form
     {
-        private IEmpleadoService empleadoService;
-        //private SalaryCalculator salaryCalculator;
-        public FrmEmpleado(IEmpleadoService empleadoService)
+        public IEmpleadoService empleadoS;
+        //public EmpleadoModel EmpleadoM {get; set;}
+        //public int  TipoEmpleado { get; set; }
+        private int Tipo;
+        public FrmEmpleado(int tipo)
         {
-            this.empleadoService = empleadoService;
+            Tipo = tipo;
             InitializeComponent();
         }
 
-        private void BtnDocente_Click(object sender, EventArgs e)
-        {
-            Empleado emp = new Docente(1000, "001-000000-0000U", "Pepito Jose",
-                "Perez Soza", 23786.98M, DateTime.Now)
-            {
-                CategoriaDocente = Domain.Enums.CategoriaDocente.Titular,
-                Id = empleadoService.GetLastEmpleadoId() + 1
-            };
-            empleadoService.Create(emp);
-            PrintEmpleado();
-        }
-
-        private void BtnAdmin_Click(object sender, EventArgs e)
-        {
-            Empleado emp = new Administrativo(3000, "001-000000-0000P", "Ana Cecilia",
-               "Conda Jimenez", 337860.00M, DateTime.Now)
-            {
-                HorasExtras = 23.5f,
-                Id = empleadoService.GetLastEmpleadoId() + 1
-            };
-            empleadoService.Create(emp);
-            PrintEmpleado();
-        }
-        private void PrintEmpleado()
-        {
-            Empleado[] empleados = empleadoService.FindAll();
-            if (empleadoService == null)
-            {
-                richTextBox1.Text = "No hay elementos a encontrar";
-                return;
-            }
-            richTextBox1.Text = "";
-            SalaryCalculatorFactory salaryCalculatorFactory = new SalaryCalculatorFactory();
-            foreach (Empleado e in empleados)
-            {
-                richTextBox1.AppendText(e.GetEmpleadoAsString());
-                //richTextBox1.AppendText($"Salario neto: {salaryCalculator.CalculateSalary(e)}\n");
-                richTextBox1.AppendText($"Salario neto: {salaryCalculatorFactory.CreateInstance(e).CalculateSalary(e)}\n");
-            }
-        }
-
-        private void btnNuevo_Click(object sender, EventArgs e)
+        private void BtnCrear_Click(object sender, EventArgs e)
         {
             try
             {
-                if (cmbTipoEmpleado.SelectedIndex == -1)
+                Validar(txtCedula.Text, txtCodigo.Text, txtNombre.Text, txtApellido.Text);
+                //Empleado2 emp;
+                switch (Tipo)
                 {
-                    MessageBox.Show("No ha seleccionado ningun tipo de empleado", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
+                    case 0:
+                        Empleado emp= new Docente(int.Parse(txtCodigo.Text), txtCedula.Text, txtNombre.Text, txtApellido.Text, nudSalario.Value, dtpFecha.Value)
+                        {
+                            CategoriaDocente = (CategoriaDocente)cmbCategoriaDocente.SelectedIndex
+                        };
+                        empleadoS.Create(emp);
+                        break;
+                    case 1:
+                        emp = new Administrativo(int.Parse(txtCodigo.Text), txtCedula.Text, txtNombre.Text, txtApellido.Text, nudSalario.Value, dtpFecha.Value)
+                        {
+                            HorasExtras = (float)nudHorasExtras.Value
+                        };
+                        empleadoS.Create(emp);
+                        break;
                 }
-                FrmEmployee datos = new FrmEmployee(cmbTipoEmpleado.SelectedIndex);
-                datos.empleadoS = empleadoService;
-                datos.ShowDialog();
-                PrintEmpleado();
+                Dispose();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message,"ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+        }
+        private void Validar(string cedula, string codigo, string nombres, string apellidos)
+        {
+            if(string.IsNullOrEmpty(cedula) || string.IsNullOrEmpty(codigo) || string.IsNullOrEmpty(nombres) || string.IsNullOrEmpty(apellidos))
+            {
+                throw new ArgumentException("Hay campos vacios, por favor rellenelos");
+            }
+            string patronCedula = @"001-\d{6}-\d{4}[A-Z]";
+            if (Regex.Matches(cedula, patronCedula).Count <= 0)
+            {
+                throw new ArgumentException("El patron de la cedula no es el correcto");
+            }
+            //if (codigo.Length > 10)
+            //{
+            //    throw new ArgumentException("El codigo no puede tener mas de 10 digitos");
+            //}
+        }
+
+        private void TxtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                MessageBox.Show("Solo se admiten numeros","ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                e.Handled = true;
+            }
+        }
+
+        private void FrmEmployee_Load(object sender, EventArgs e)
+        {
+            cmbCategoriaDocente.Items.AddRange(Enum.GetValues(typeof(CategoriaDocente)).Cast<object>().ToArray());
+            switch (Tipo)
+            {
+                case 0:
+                    pnlDocente.Visible = true;
+                    break;
+                case 1:
+                    pnlAdmin.Visible = true;
+                    break;
             }
         }
     }
