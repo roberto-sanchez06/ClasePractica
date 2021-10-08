@@ -7,6 +7,9 @@ namespace Domain.Entities.Producto
 {
     public class Producto
     {
+        //agregue fecha de adquisicion
+        public DateTime FechaAdquisicon { get; set; }
+        //
         public int Id { get; set; }
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
@@ -31,6 +34,13 @@ namespace Domain.Entities.Producto
                 {
                     return 0;
                 }
+            }
+        }
+        public class ProductoCompareFechaAdq : IComparer<Producto>
+        {
+            public int Compare(Producto x, Producto y)
+            {
+                return x.FechaAdquisicon.CompareTo(y.FechaAdquisicon);
             }
         }
     }

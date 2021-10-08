@@ -39,12 +39,15 @@ namespace Clase1_Programacion.Formularios.Product
                 Existencia = (int)nudCantidad.Value,
                 Precio = nudPrecio.Value,
                 FechaVencimiento = dtpCaducidad.Value,
-                UnidadMedida = (UnidadMedida)cmbUniMedida.SelectedIndex
+                UnidadMedida = (UnidadMedida)cmbUniMedida.SelectedIndex,
+                //pongo esto para probar
+                FechaAdquisicon=DateTime.Now
             };
 
             productoS.Create(p);
 
             Dispose();
+
         }
     }
 }

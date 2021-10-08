@@ -37,5 +37,12 @@ namespace Clase1_Programacion.Formularios.Product
                                               .ToArray()
                                           );
         }
+
+        private void btnEntrada_Click(object sender, EventArgs e)
+        {
+            FrmProducto frmProducto = new FrmProducto();
+            frmProducto.productoS = productoService;
+            frmProducto.ShowDialog();
+        }
     }
 }

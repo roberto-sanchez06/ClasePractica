@@ -33,6 +33,8 @@ namespace Clase1_Programacion.Formularios.Product
             this.cmbUnidadMedida = new System.Windows.Forms.ComboBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnEntrada = new System.Windows.Forms.Button();
+            this.btnSalida = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // rtbProductViewer
@@ -72,11 +74,32 @@ namespace Clase1_Programacion.Formularios.Product
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
+            // btnEntrada
+            // 
+            this.btnEntrada.Location = new System.Drawing.Point(549, 345);
+            this.btnEntrada.Name = "btnEntrada";
+            this.btnEntrada.Size = new System.Drawing.Size(75, 23);
+            this.btnEntrada.TabIndex = 4;
+            this.btnEntrada.Text = "Entrada";
+            this.btnEntrada.UseVisualStyleBackColor = true;
+            this.btnEntrada.Click += new System.EventHandler(this.btnEntrada_Click);
+            // 
+            // btnSalida
+            // 
+            this.btnSalida.Location = new System.Drawing.Point(447, 345);
+            this.btnSalida.Name = "btnSalida";
+            this.btnSalida.Size = new System.Drawing.Size(75, 23);
+            this.btnSalida.TabIndex = 5;
+            this.btnSalida.Text = "Salida";
+            this.btnSalida.UseVisualStyleBackColor = true;
+            // 
             // FrmProductosManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 380);
+            this.Controls.Add(this.btnSalida);
+            this.Controls.Add(this.btnEntrada);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.cmbUnidadMedida);
@@ -94,5 +117,7 @@ namespace Clase1_Programacion.Formularios.Product
         private System.Windows.Forms.ComboBox cmbUnidadMedida;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnEntrada;
+        private System.Windows.Forms.Button btnSalida;
     }
 }

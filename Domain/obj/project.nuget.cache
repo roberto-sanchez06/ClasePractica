@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2o0qQoPd9sxAGQXlRssKgqyhyzhMialMm2w/Xwa6WqWk+w4H/mjEuraWgrmXCM9sfvSHOFyfsk48tNbq88CdfA==",
+  "dgSpecHash": "w4KEs7T6m2L4w0kwnZmNpjOsCHZBCd2InxaSJhAt1YdDINvQ8p8GAz70HUoAhOs5b4QBEzmr+UG7fjXBX2Bnqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Roberto\\Desktop\\UNI ONLINE\\CLASES DE PROGRAMACION EN LINEA\\ProgramacionClases2\\Programacion_Clases\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\Roberto\\Desktop\\UNI ONLINE\\Clases programacion\\Programacion_Clases\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Roberto\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Roberto\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

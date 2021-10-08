@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain.Enums.Producto
 {
-    public enum ValoracionInventario
+    public enum TipoValorInventario
     {
         Peps,
         Ueps,
