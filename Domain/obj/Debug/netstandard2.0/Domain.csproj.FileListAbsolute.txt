@@ -61,3 +61,13 @@ C:\Users\Roberto\Desktop\UNI ONLINE\Clases programacion\Programacion_Clases\Doma
 C:\Users\Roberto\Desktop\UNI ONLINE\Clases programacion\Programacion_Clases\Domain\obj\Debug\netstandard2.0\Domain.csproj.CoreCompileInputs.cache
 C:\Users\Roberto\Desktop\UNI ONLINE\Clases programacion\Programacion_Clases\Domain\obj\Debug\netstandard2.0\Domain.dll
 C:\Users\Roberto\Desktop\UNI ONLINE\Clases programacion\Programacion_Clases\Domain\obj\Debug\netstandard2.0\Domain.pdb
+C:\Users\larry\Desktop\robla2\ClasePractica\Domain\bin\Debug\netstandard2.0\Domain.deps.json
+C:\Users\larry\Desktop\robla2\ClasePractica\Domain\bin\Debug\netstandard2.0\Domain.dll
+C:\Users\larry\Desktop\robla2\ClasePractica\Domain\bin\Debug\netstandard2.0\Domain.pdb
+C:\Users\larry\Desktop\robla2\ClasePractica\Domain\obj\Debug\netstandard2.0\Domain.csproj.AssemblyReference.cache
+C:\Users\larry\Desktop\robla2\ClasePractica\Domain\obj\Debug\netstandard2.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\larry\Desktop\robla2\ClasePractica\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfoInputs.cache
+C:\Users\larry\Desktop\robla2\ClasePractica\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfo.cs
+C:\Users\larry\Desktop\robla2\ClasePractica\Domain\obj\Debug\netstandard2.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\larry\Desktop\robla2\ClasePractica\Domain\obj\Debug\netstandard2.0\Domain.dll
+C:\Users\larry\Desktop\robla2\ClasePractica\Domain\obj\Debug\netstandard2.0\Domain.pdb

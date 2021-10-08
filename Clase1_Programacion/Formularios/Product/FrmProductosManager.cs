@@ -23,21 +23,11 @@ namespace Clase1_Programacion.Formularios.Product
             InitializeComponent();
         }
 
-        private void btnNuevo_Click(object sender, EventArgs e)
-        {
-            FrmProducto frmProducto = new FrmProducto();
-            frmProducto.productoS = productoService;
-            frmProducto.ShowDialog();
-
-            rtbProductViewer.Text = productoService.GetProductosAsJson();
-        }
+       
 
         private void FrmProductosManager_Load(object sender, EventArgs e)
         {
-            cmbUnidadMedida.Items.AddRange(Enum.GetValues(typeof(UnidadMedida))
-                                              .Cast<object>()
-                                              .ToArray()
-                                          );
+            
             cmbValoracion.Items.AddRange(Enum.GetValues(typeof(TipoValorInventario))
                                               .Cast<object>()
                                               .ToArray()
@@ -78,7 +68,12 @@ namespace Clase1_Programacion.Formularios.Product
             int salida = (int)nudSalida.Value;
             ValoracionInventarioFactory factory = new ValoracionInventarioFactory();
             decimal precio=factory.CrearInstancia((TipoValorInventario)cmbValoracion.SelectedIndex).CalcularValorInventario(salida, ref productoService);
-            rtbSalidas.AppendText(precio.ToString());
+            rtbSalidas.AppendText("el precio de la salida es: "+precio.ToString()+ "\n");
+        }
+
+        private void cmbUnidadMedida_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
