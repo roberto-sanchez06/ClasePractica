@@ -86,7 +86,7 @@
             this.cmbTipoEmpleado.Size = new System.Drawing.Size(355, 21);
             this.cmbTipoEmpleado.TabIndex = 4;
             // 
-            // FrmEmpleado
+            // FrmEmpleadoManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -96,7 +96,7 @@
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.btnAdmin);
             this.Controls.Add(this.btnDocente);
-            this.Name = "FrmEmpleado";
+            this.Name = "FrmEmpleadoManager";
             this.Text = "FrmEmpleado";
             this.ResumeLayout(false);
 

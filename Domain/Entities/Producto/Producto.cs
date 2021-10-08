@@ -43,5 +43,10 @@ namespace Domain.Entities.Producto
                 return x.FechaAdquisicon.CompareTo(y.FechaAdquisicon);
             }
         }
+        public string MostrarDatos()
+        {
+            return string.Format("{0,-5:d} {1,20:d} {2,10: d} {3,20:f} {4,20:f} \n",
+                            $"{Id}", $"{FechaAdquisicon}", $"{Existencia}", $"{Precio}", $"{ Precio*Existencia }");
+        }
     }
 }

@@ -43,11 +43,8 @@ namespace Clase1_Programacion.Formularios.Product
                 //pongo esto para probar
                 FechaAdquisicon=DateTime.Now
             };
-
             productoS.Create(p);
-
             Dispose();
-
         }
     }
 }

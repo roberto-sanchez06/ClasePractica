@@ -9,6 +9,7 @@ namespace AppCore.Processes.ValoracionInventario
 {
     public class InventarioPromPonderado : IValoracionInventario
     {
+        //el ponderado esta malo
         public decimal CalcularValorInventario(int salida, ref IProductoService productos)
         {
             if (productos.FindAll() == null)
@@ -33,7 +34,7 @@ namespace AppCore.Processes.ValoracionInventario
             int suma = 0;
             foreach (Producto p in prod.FindAll())
             {
-                suma = p.Existencia;
+                suma += p.Existencia;
             }
             return suma;
         }
