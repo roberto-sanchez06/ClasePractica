@@ -7,10 +7,10 @@ using Domain.Entities.Producto;
 
 namespace AppCore.Processes.ValoracionInventario
 {
-    public class InventarioUEPS : IValoracionInventario
+    public class InventarioUEPS : ValoracionInventario
     {
        
-        public decimal CalcularValorInventario(int salida, ref IProductoService productos)
+        public override decimal CalcularValorInventario(int salida, ref IProductoService productos)
         {
             if (productos.FindAll() == null)
             {
@@ -26,7 +26,7 @@ namespace AppCore.Processes.ValoracionInventario
             return valor;
         }
 
-        public void Eliminar(ref IProductoService prod, int salida)
+        public override void Eliminar(ref IProductoService prod, int salida)
         {
            
             while (prod.FindAll()[prod.FindAll().Length-1].Existencia < salida)

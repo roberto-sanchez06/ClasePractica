@@ -7,10 +7,10 @@ using Domain.Entities.Producto;
 
 namespace AppCore.Processes.ValoracionInventario
 {
-    public class InventarioPromPonderado : IValoracionInventario
+    public class InventarioPromPonderado : ValoracionInventario
     {
        
-        public decimal CalcularValorInventario(int salida, ref IProductoService productos)
+        public override decimal CalcularValorInventario(int salida, ref IProductoService productos)
         {
             if (productos.FindAll() == null)
             {
@@ -39,20 +39,6 @@ namespace AppCore.Processes.ValoracionInventario
             return suma;
         }
        
-        public void Eliminar(ref IProductoService prod, int salida)
-        {
-            while (prod.FindAll()[0].Existencia < salida)
-            {
-                salida -= prod.FindAll()[0].Existencia;
-                prod.Delete(prod.FindAll()[0]);
-                Array.Sort(prod.FindAll(), new Producto.ProductoCompareFechaAdq());
-            }
-            prod.FindAll()[0].Existencia -= salida;
-            if (prod.FindAll()[0].Existencia == 0)
-            {
-                prod.Delete(prod.FindAll()[0]);
-                Array.Sort(prod.FindAll(), new Producto.ProductoCompareFechaAdq());
-            }
-        }
+        
     }
 }
