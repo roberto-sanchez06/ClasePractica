@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Lh0Wi4ljU8AOZgPDY7/3NlDQon7tmHAHUL5L1Ob5kj4rjL4SqYTHRWiotR1ppvnKJKiV1MwDJisqdWEYAkPRqA==",
+  "dgSpecHash": "g9tJIJqiqXOk824eEui7+cv7ZVheTxi9GA0ZeWtn3CeRzuliTKU+h7XNKiCrBBEU0vqToa6Sw6NBKy7H0QjlfQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\larry\\Desktop\\robla2\\ClasePractica\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\Roberto\\Desktop\\Programacion\\ClasePractica\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\larry\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\larry\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\larry\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\Roberto\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Roberto\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Roberto\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

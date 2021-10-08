@@ -15,16 +15,12 @@ namespace AppCore.Factories
             {
                 case TipoValorInventario.Peps:
                     return new InventarioPEPS();
-                    break;
                 case TipoValorInventario.Ueps:
                     return new InventarioUEPS();
-                    break;
                 case TipoValorInventario.PromedioSimple:
                     return new InventarioPromSimple();
-                    break;
                 case TipoValorInventario.PromedioPonderado:
                     return new InventarioPromPonderado();
-                    break;
             }
             return null;
         }

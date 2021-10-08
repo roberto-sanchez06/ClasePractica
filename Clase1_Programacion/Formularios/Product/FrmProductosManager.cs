@@ -36,13 +36,11 @@ namespace Clase1_Programacion.Formularios.Product
 
         private void btnEntrada_Click(object sender, EventArgs e)
         {
-            //Producto[] productos = productoService.FindAll();
-            //if (productoService == null)
-            //{
-            //    rtbProductViewer.Text = "No hay elementos a encontrar";
-            //    return;
-            //}
-            //rtbProductViewer.Text = "";
+            if (productoService.FindAll() == null)
+            {
+                rtbProductViewer.Text = string.Format("{0,-5:d} {1,20:d} {2,20: d} {3,20:f} {4,20:f} \n",
+                                "Id", "Fecha", "Cant", "Costo Uni", "Costo Total");
+            }
             FrmProducto frmProducto = new FrmProducto();
             frmProducto.productoS = productoService;
             frmProducto.ShowDialog();
@@ -51,12 +49,12 @@ namespace Clase1_Programacion.Formularios.Product
                 rtbProductViewer.Text = "No hay elementos a encontrar";
                 return;
             }
-            rtbProductViewer.Text=string.Format("{0,-5:d} {1,20:d} {2,20: d} {3,20:f} {4,20:f} \n",
-                            "Id", "Fecha", "Cant", "Costo Uni", "Costo Total");
-            foreach (Producto p in productoService.FindAll())
-            {
-                rtbProductViewer.AppendText(p.MostrarDatos());
-            }
+            //foreach (Producto p in productoService.FindAll())
+            //{
+            //    rtbProductViewer.AppendText(p.MostrarDatos());
+            //}
+            rtbProductViewer.AppendText(productoService.FindAll()[productoService.FindAll().Length- 1].MostrarDatos()+"\n");
+            //rtbProductViewer.AppendText()
         }
 
         private void btnSalida_Click(object sender, EventArgs e)
@@ -70,7 +68,7 @@ namespace Clase1_Programacion.Formularios.Product
                 int salida = (int)nudSalida.Value;
                 ValoracionInventarioFactory factory = new ValoracionInventarioFactory();
                 decimal precio = factory.CrearInstancia((TipoValorInventario)cmbValoracion.SelectedIndex).CalcularValorInventario(salida, ref productoService);
-                rtbSalidas.AppendText("el precio de la salida es: " + precio.ToString() + "\n");
+                rtbSalidas.AppendText($"Las unidades de salida fueron {salida}, el precio unitario es: {precio} y el total de salida es: {salida*precio}\n");
             }
             catch (Exception ex) 
             {
@@ -79,9 +77,11 @@ namespace Clase1_Programacion.Formularios.Product
 
         }
 
-        private void cmbUnidadMedida_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnVerInventario_Click(object sender, EventArgs e)
         {
-
+            FrmInventarioViewer viewer = new FrmInventarioViewer();
+            viewer.productoServ = productoService;
+            viewer.ShowDialog();
         }
     }
 }

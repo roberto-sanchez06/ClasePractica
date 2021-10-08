@@ -35,6 +35,7 @@ namespace Clase1_Programacion.Formularios.Product
             this.rtbSalidas = new System.Windows.Forms.RichTextBox();
             this.cmbValoracion = new System.Windows.Forms.ComboBox();
             this.nudSalida = new System.Windows.Forms.NumericUpDown();
+            this.btnVerInventario = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudSalida)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,11 +108,22 @@ namespace Clase1_Programacion.Formularios.Product
             0,
             0});
             // 
+            // btnVerInventario
+            // 
+            this.btnVerInventario.Location = new System.Drawing.Point(12, 357);
+            this.btnVerInventario.Name = "btnVerInventario";
+            this.btnVerInventario.Size = new System.Drawing.Size(154, 23);
+            this.btnVerInventario.TabIndex = 9;
+            this.btnVerInventario.Text = "Ver Inventario y sus datos";
+            this.btnVerInventario.UseVisualStyleBackColor = true;
+            this.btnVerInventario.Click += new System.EventHandler(this.btnVerInventario_Click);
+            // 
             // FrmProductosManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 380);
+            this.ClientSize = new System.Drawing.Size(881, 403);
+            this.Controls.Add(this.btnVerInventario);
             this.Controls.Add(this.nudSalida);
             this.Controls.Add(this.cmbValoracion);
             this.Controls.Add(this.rtbSalidas);
@@ -134,5 +146,6 @@ namespace Clase1_Programacion.Formularios.Product
         private System.Windows.Forms.RichTextBox rtbSalidas;
         private System.Windows.Forms.ComboBox cmbValoracion;
         private System.Windows.Forms.NumericUpDown nudSalida;
+        private System.Windows.Forms.Button btnVerInventario;
     }
 }
