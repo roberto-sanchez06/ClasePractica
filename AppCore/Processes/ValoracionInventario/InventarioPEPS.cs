@@ -9,7 +9,7 @@ namespace AppCore.Processes.ValoracionInventario
 {
     public class InventarioPEPS : IValoracionInventario
     {
-        // no se ocupo nada de salida
+       
         public decimal CalcularValorInventario(int salida, ref IProductoService productos)
         {
             if (productos.FindAll() == null)
@@ -18,7 +18,7 @@ namespace AppCore.Processes.ValoracionInventario
             }
             if (salida > productos.FindAll()[0].Existencia)
             {
-                throw new ArgumentException("Las salidas son menores a las primeras unidades que ingresaron, para evitar incovenientes divida las salidas en la cantidad que haga falta");
+                throw new ArgumentException("Las salidas son menores a las primeras unidades que ingresaron");
             }
             decimal valor = productos.FindAll()[0].Precio;
             Eliminar(ref productos, salida);

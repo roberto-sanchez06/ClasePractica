@@ -9,7 +9,7 @@ namespace AppCore.Processes.ValoracionInventario
 {
     public class InventarioPromPonderado : IValoracionInventario
     {
-        //el ponderado esta malo
+       
         public decimal CalcularValorInventario(int salida, ref IProductoService productos)
         {
             if (productos.FindAll() == null)
@@ -38,7 +38,7 @@ namespace AppCore.Processes.ValoracionInventario
             }
             return suma;
         }
-        //ver si cambio el modificador de acceso
+       
         public void Eliminar(ref IProductoService prod, int salida)
         {
             while (prod.FindAll()[0].Existencia < salida)

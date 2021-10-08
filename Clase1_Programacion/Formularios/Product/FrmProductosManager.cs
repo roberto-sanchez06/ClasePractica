@@ -61,14 +61,22 @@ namespace Clase1_Programacion.Formularios.Product
 
         private void btnSalida_Click(object sender, EventArgs e)
         {
-            if (cmbValoracion.SelectedIndex == -1)
+            try
             {
-                MessageBox.Show("No ha seleccionado ningun metodo de valoracion de inventario","ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                if (cmbValoracion.SelectedIndex == -1)
+                {
+                    MessageBox.Show("No ha seleccionado ningun metodo de valoracion de inventario", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                int salida = (int)nudSalida.Value;
+                ValoracionInventarioFactory factory = new ValoracionInventarioFactory();
+                decimal precio = factory.CrearInstancia((TipoValorInventario)cmbValoracion.SelectedIndex).CalcularValorInventario(salida, ref productoService);
+                rtbSalidas.AppendText("el precio de la salida es: " + precio.ToString() + "\n");
             }
-            int salida = (int)nudSalida.Value;
-            ValoracionInventarioFactory factory = new ValoracionInventarioFactory();
-            decimal precio=factory.CrearInstancia((TipoValorInventario)cmbValoracion.SelectedIndex).CalcularValorInventario(salida, ref productoService);
-            rtbSalidas.AppendText("el precio de la salida es: "+precio.ToString()+ "\n");
+            catch (Exception ex) 
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         private void cmbUnidadMedida_SelectedIndexChanged(object sender, EventArgs e)

@@ -31,20 +31,40 @@ namespace Clase1_Programacion.Formularios.Product
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            Producto p = new Producto()
+            if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtDesc.Text) || cmbUniMedida.SelectedIndex == -1)
             {
-                Id = productoS.GetLastProductoId() + 1,
-                Nombre = txtNombre.Text,
-                Descripcion = txtDesc.Text,
-                Existencia = (int)nudCantidad.Value,
-                Precio = nudPrecio.Value,
-                FechaVencimiento = dtpCaducidad.Value,
-                UnidadMedida = (UnidadMedida)cmbUniMedida.SelectedIndex,
-                //pongo esto para probar
-                FechaAdquisicon=DateTime.Now
-            };
-            productoS.Create(p);
-            Dispose();
+                MessageBox.Show("hay algun campo vacio porfavor llenelo");
+
+            }
+            else 
+            {
+                Producto p = new Producto()
+                {
+                    Id = productoS.GetLastProductoId() + 1,
+                    Nombre = txtNombre.Text,
+                    Descripcion = txtDesc.Text,
+                    Existencia = (int)nudCantidad.Value,
+                    Precio = nudPrecio.Value,
+                    FechaVencimiento = dtpCaducidad.Value,
+                    UnidadMedida = (UnidadMedida)cmbUniMedida.SelectedIndex,
+                    //pongo esto para probar
+                    FechaAdquisicon = DateTime.Now
+                };
+                productoS.Create(p);
+                Dispose();
+
+
+
+
+            }
+            
+            
+          
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

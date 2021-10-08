@@ -9,7 +9,7 @@ namespace AppCore.Processes.ValoracionInventario
 {
     public class InventarioUEPS : IValoracionInventario
     {
-        //el metodo UEPS  da error
+       
         public decimal CalcularValorInventario(int salida, ref IProductoService productos)
         {
             if (productos.FindAll() == null)
@@ -18,7 +18,7 @@ namespace AppCore.Processes.ValoracionInventario
             }
             if (salida > productos.FindAll()[productos.FindAll().Length-1].Existencia)
             {
-                throw new ArgumentException("Las salidas son mayores a las ultimas unidades que ingresaron de ultimo, para evitar incovenientes divida las salidas en la cantidad que haga falta");
+                throw new ArgumentException("Las salidas son mayores a las ultimas unidades que ingresaron de ultimo");
             }
             decimal valor = productos.FindAll()[productos.FindAll().Length - 1].Precio;
             
@@ -28,7 +28,7 @@ namespace AppCore.Processes.ValoracionInventario
 
         public void Eliminar(ref IProductoService prod, int salida)
         {
-            //lo primero creo que ni es necesario al igual que en pep
+           
             while (prod.FindAll()[prod.FindAll().Length-1].Existencia < salida)
             {
                 salida -= prod.FindAll()[prod.FindAll().Length - 1].Existencia;
